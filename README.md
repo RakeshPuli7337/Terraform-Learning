@@ -20,6 +20,18 @@ This repository contains Terraform configurations to create a single VM in Azure
 - `terraform.lock.hcl` is committed to lock provider versions.
 - Sensitive files (like SSH keys or `.tfvars` containing secrets) are **not** included.
 
+terraform.tfvars
+      |
+      v
+variables.tf (root module)
+      |
+      v
+main.tf (root module calls modules)
+      |
+      v
+module variables.tf
+      |
+      v
+module main.tf (resource)
 
-```text terraform.tfvars ↓ variables.tf (root module) ↓ main.tf (root module calls modules) ↓ module variables.tf ↓ module main.tf (resource) ``` 
 
