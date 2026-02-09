@@ -21,5 +21,5 @@ This repository contains Terraform configurations to create a single VM in Azure
 - Sensitive files (like SSH keys or `.tfvars` containing secrets) are **not** included.
 
 
-<pre> ```text terraform.tfvars ↓ variables.tf (root module) ↓ main.tf (root module calls modules) ↓ module variables.tf ↓ module main.tf (resource) ``` </pre>
+```text terraform.tfvars ↓ variables.tf (root module) ↓ main.tf (root module calls modules) ↓ module variables.tf ↓ module main.tf (resource) ``` 
 
